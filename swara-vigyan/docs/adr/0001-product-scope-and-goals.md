@@ -37,13 +37,26 @@ identify the applicable rule(s)/signal(s) and present the reading. It:
 6. carries reference material and the Guru's examples.
 
 **Capability 2 — Remedies & Therapeutic Practices** (ADR-0018). A Swara-first reference for the
-taught breath/Swara remedies (headache/anxiety/migraine, BP, fever, cold, body pain), with the
-taught durations, an optional personal practice record, and — clearly separated from the teaching —
-health-safety disclaimers (ADR-0019).
+taught breath/Swara remedies (headache/anxiety/migraine, BP, fever, cold, **constipation**, body
+pain, **charged wool**), with taught durations, an optional personal practice record, and — clearly
+separated from the teaching — health-safety disclaimers (ADR-0019).
 
-Both capabilities share: the Swara domain model (ADR-0002), the **content-provenance convention**
-(Guru Teaching / Research-Safety Note / Needs Clarification — ADR-0017), the raw-first data approach
-(ADR-0015), and the privacy stance (ADR-0008).
+**Capability 3 — Daily Practice / TODAY** (ADR-0020). Tithi → expected Swara, the sunrise checkpoint,
+and morning wake-up guidance (50/50 model, final vs temporary wake-up) — recording only what is
+taught (the full Tithi mapping and morning micro-rules are Pending).
+
+**Capability 4 — Important Events** (ADR-0021). Proactive *action-in-a-chosen-Swara* guidance,
+starting with public speaking / mass gathering (Chandra→stage, Surya+inhale→greet, Surya→present).
+
+Cross-cutting for all capabilities: the Swara domain model (ADR-0002), the **content-provenance
+convention** (Guru Teaching / Research-Safety Note / Needs Clarification — ADR-0017), the raw-first
+data approach (ADR-0015), and the privacy stance (ADR-0008). Consultation adds a **My Question /
+Proxy** mode (ADR-0012 Mode F). The envisioned module map (ADR-0005): **TODAY · SWARA OBSERVATION ·
+PREDICTION · REMEDIES · IMPORTANT EVENTS · PRACTICE JOURNAL**.
+
+> **Reliability (GURU TEACHING, attributed):** *"Law of Attraction fail हो सकता है, लेकिन Swara
+> Vigyan fail नहीं होता।"* Captured as the Guru's words, never as the app's own guarantee
+> (ADR-0017 PV-7, ADR-0019 SF-4).
 
 ### Primary user
 
@@ -95,6 +108,17 @@ Remedies capability (ADR-0018/0019):
 | FR-18 | Show health-safety disclaimers on the Remedies module and every remedy screen, **visually separated** from the teaching (ADR-0019). |
 | FR-19 | Offer an optional, opt-in, local-only **personal practice record**; may offer a convenience timer for taught durations. |
 | FR-20 | Label all content by provenance — Guru Teaching / Research-Safety Note / Needs Clarification (ADR-0017). |
+
+Daily practice & events (ADR-0020/0021) and proxy (ADR-0012):
+
+| ID | Requirement |
+|----|-------------|
+| FR-21 | **TODAY** module: show Tithi/paksha, sunrise, wake-up guidance; compare observed sunrise Swara to the expected one **only where taught** (else `NEEDS CLARIFICATION`); never auto-derive an unknown Tithi's Swara. |
+| FR-22 | Let the practitioner **manually record** the expected Swara they were taught for a given day. |
+| FR-23 | **IMPORTANT EVENTS → Public Speaking**: present the taught three-phase Swara guidance (guidance, not a YES/NO prediction). |
+| FR-24 | **My Question / Proxy** mode: capture another person's spontaneous Swara/state; show `Pending` for the YES/NO mapping (not yet taught). |
+| FR-25 | Preserve exact taught terms (e.g. **"रम रम"**, count 27, 24 hours) without normalization (ADR-0017 PV-6). |
+| FR-26 | Keep **action** intent (act in a chosen Swara: events/remedies) distinct from **observation** intent (spontaneous, never manufactured: prediction) — ADR-0021 EV-0. |
 
 ### Phasing
 

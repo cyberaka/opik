@@ -39,8 +39,9 @@ later corrected or added. Master Notes v1 states the principle directly:
 
 ```yaml
 meta:
-  ruleset_version: "master-notes-v1"
-  mode: independent_room        # | shared_chamber | sabha | remote | behind
+  ruleset_version: "master-notes-v2"
+  context: prediction           # prediction | remedy | today | event | practice_journal
+  mode: independent_room        # prediction: independent_room | shared_chamber | sabha | remote | behind | proxy
   timestamp: <captured at runtime>
 practitioner:
   ready: true                   # Rule 0 gate (ADR-0011); false ⇒ no derivation
@@ -51,29 +52,48 @@ practitioner:
 questioner:
   position: right               # left | right | behind | unknown
   entry_side: right             # left | right | unknown/null (mode-dependent)
+  relative_position: front      # front | behind | unknown
+  proxy_swara: null             # proxy mode only (ADR-0012 Mode F); mapping PENDING
 observations:
   # each moment records the ACTIVE NOSTRIL AT THAT MOMENT + the observed side,
   # so energy can be re-derived faithfully (Sunita case, ADR-0004)
   first_moment:  { active_nostril: right, observed_side: right }   # e.g. entry / sit
   second_moment: { active_nostril: left,  observed_side: right }   # e.g. seating / question
   addressing_order: before_question   # before_question | after_question | none
+tithi:                          # daily-practice context (ADR-0020); optional
+  paksha: krishna               # shukla | krishna | unknown
+  name: navami                  # tithi name | unknown
+  expected_swara: surya         # only if TAUGHT for this tithi; else null/needs_clarification
+sunrise:
+  time: <local sunrise>
+  observed_swara: surya         # practitioner's Swara at sunrise (for TS-1 alignment)
 question:
-  raw_text: "Sir, क्या यह काम सफल होगा?"   # optional; see privacy (ADR-0008)
+  raw_text: "Sir, क्या यह काम सफल होगा?"   # optional, off by default; see privacy (ADR-0008)
 ```
 
 Notes:
 - Each observation moment stores the **active nostril at that moment**, not a pre-computed
   Bhara/Khali — polarity is derived later so a Swara change between moments is preserved.
+- `tithi.expected_swara` is filled **only** where the Guru's mapping is known (currently just
+  Krishna Paksha Navami → Surya); otherwise it stays null / `NEEDS CLARIFICATION` (ADR-0020 TD-3).
+- `proxy_swara` and any proxy→YES/NO interpretation are `Pending` (ADR-0012 Mode F).
 - `ruleset_version` makes reprocessing explicit and auditable.
 
 ### Derivation output (not stored as source of truth)
 
-```text
-derive(raw) → {
-  signals: [ {id, reading: Positive|Negative|Mixed(rule)|Pending|NotApplicable, why} ... ],
-  conflict: none | pending,           # ADR-0014
-  gated: false                        # true if Rule 0 failed → no signals
-}
+```yaml
+derived:                      # computed from raw + ruleset_version; never the source of truth
+  bhara_side:                 # from active nostril at the relevant moment
+  khali_side:
+  saguna_nirguna:             # from breathing_phase (only if breath_spontaneous)
+  first_energy:               # bhara | khali (transition modes)
+  second_energy:
+  addressing_energy:          # positive | negative (ADR-0013 Signal D)
+  tithi_alignment:            # aligned | misaligned | needs_clarification (ADR-0020)
+prediction:
+  signals: [ {id, reading: Positive|Negative|Mixed(rule)|Pending|NotApplicable, why} ]
+  conflict: none | pending    # ADR-0014
+  gated: false                # true if Rule 0 failed → no signals
 ```
 
 ### Requirements

@@ -45,6 +45,14 @@ of three **provenance labels**:
 - **PV-5:** Relationship to existing labels: `Pending` (ADR-0014, unresolved *prediction* cases) and
   `NEEDS CLARIFICATION` (contradiction/unconfirmed *content*) are both "not-yet-known" states and are
   presented with the same honesty; they may be tracked in one list (ADR-0010 §Pending).
+- **PV-6 — Preserve exact terms.** Where the Guru gives a specific term, it is preserved verbatim and
+  never "auto-corrected". Canonical example: the beejakshara is **"रम रम"**, not "राम राम"
+  (ADR-0018 RM-0). Silent normalization of such terms is prohibited.
+- **PV-7 — Attributed claims, not app claims.** Strong statements by the Guru — e.g.
+  *"Law of Attraction fail हो सकता है, लेकिन Swara Vigyan fail नहीं होता"* — are captured as
+  **GURU TEACHING quotations, attributed to the Guru**. The app presents them as the teaching's
+  words, never as the app's own guarantee of results (reinforced by the safety framing, ADR-0019
+  SF-4).
 
 ## Consequences
 

@@ -31,7 +31,10 @@ entry/seating pair. This ADR is the authoritative glossary and core model.
 | **Practitioner / Sadhak** | साधक | The person performing the consultation. |
 | **Visitor / Questioner** | — | The person with a question. |
 | **Agni Tattva** | अग्नि तत्त्व | The fire element; in the remedies, linked to **Surya** Swara (ADR-0018). |
-| **RAM (beejakshara)** | राम | The Agni beejakshara chanted (aloud or mentally) with Surya Swara to activate Agni Tattva (ADR-0018). |
+| **"रम रम" (beejakshara)** | रम रम | The Agni beejakshara chanted (aloud or mentally) with Surya Swara to activate Agni Tattva (ADR-0018). **Canonical spelling is "रम रम", not "राम राम"** — preserve exactly (ADR-0017/0018 RM-0). |
+| **Tithi** | तिथि | The lunar day; each Tithi has an *expected Swara* (ADR-0020). |
+| **Paksha** | पक्ष | The lunar fortnight — Shukla (bright) / Krishna (dark); part of a Tithi's name. |
+| **Sunrise** | सूर्योदय | The main daily checkpoint: the expected Tithi Swara should be active at sunrise (ADR-0020). |
 
 ### Thermal polarity of the nadis (remedies)
 

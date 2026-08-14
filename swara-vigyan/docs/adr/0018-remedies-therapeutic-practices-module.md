@@ -31,8 +31,21 @@ catalogue **as taught** (`GURU TEACHING`).
 
 ```text
 CHANDRA (LEFT)  → COOLING / CALMING      → High BP, High Fever
-SURYA  (RIGHT)  → HEATING / ACTIVATING   → Low BP, Excessive cold, Body pain
+SURYA  (RIGHT)  → HEATING / ACTIVATING   → Low BP, Excessive cold, Constipation, Body pain, Charged wool
 ```
+
+### Canonical terminology — "रम रम" (GURU TEACHING correction)
+
+The beejakshara used in the heating/Agni practices is **"रम रम"** — **not** "राम राम":
+
+```text
+❌ राम राम
+✅ रम रम
+```
+
+- **RM-0:** The app MUST preserve the exact term **"रम रम"** wherever this mantra appears (pain
+  practice R6, charged wool R8). This is a canonical correction from the Guru and must not be
+  "corrected" to राम राम (ADR-0017 PV-1).
 
 ### Canonical remedy catalogue (GURU TEACHING — strength/duration preserved)
 
@@ -43,7 +56,9 @@ SURYA  (RIGHT)  → HEATING / ACTIVATING   → Low BP, Excessive cold, Body pain
 | R3 | Low BP | Close **LEFT**, breathe from **RIGHT / Surya** | (see Pending) | BP balance begins |
 | R4 | High Fever | In **Chandra Swara**, blow toward a glass of water (hygienic gap), patient drinks | — | fever begins to come down |
 | R5 | Very cold / chills | In **Surya Swara**, blow toward water (hygienic gap), person drinks | — | warmth felt in body |
-| R6 | Body pain (frozen shoulder, knee, joint, back, muscle, abdominal, localized) | **Surya + Agni Tattva + RAM beejakshara + palm-rubbing** → apply warm palms to the area | ~15 min/day | relief |
+| R6 | Body pain (frozen shoulder, knee, joint, back, muscle, abdominal, localized) | **Surya + Agni Tattva + "रम रम" beejakshara + palm-rubbing** → apply warm palms to the area | ~15 min/day | relief |
+| R7 | Constipation | In **Surya / RIGHT** Swara, begin to clear the tummy | — | bowel movement / relief |
+| R8 | Charged wool (body warmth) | Chant **"रम रम" × 27** over a wool cloth to charge it | use **24 hours** | warms the whole body |
 
 ### Technique details
 
@@ -70,26 +85,40 @@ COLD : Surya Swara → water (hygienic distance) → blow in Surya → drink →
 Note (GURU TEACHING): maintain enough gap between nose/mouth and the glass that no germ enters the
 water.
 
-**R6 — Pain relief (Surya + Agni Tattva + RAM + palm rubbing)**
+**R6 — Pain relief (Surya + Agni Tattva + "रम रम" + palm rubbing)**
 ```text
-Surya Swara → inhale → mentally chant "RAM RAM RAM..." (vocal not required)
-   ↓ Surya is linked to the body's AGNI TATTVA; RAM is the Agni beejakshara that activates it
+Surya Swara → inhale → mentally chant "रम रम रम रम..." (vocal not required)
+   ↓ Surya is linked to the body's AGNI TATTVA; "रम रम" is the Agni beejakshara that activates it
 Rub both palms together while chanting → heat/Agni felt in palms
    ↓
 Place warm palms on the painful area (use like sikai / warm compress)
    ↓
-When palms cool: Surya inhale + RAM + rub again → reheat → reapply
+When palms cool: Surya inhale + "रम रम" + rub again → reheat → reapply
    ↓
 Repeat as needed, ~15 minutes daily
 ```
+
+**R7 — Constipation**
+```text
+CONSTIPATION → Surya / RIGHT active → begin to clear the tummy → bowel movement → relief
+```
+Formula: *Constipation → Surya Swara → tummy clear.*
+
+**R8 — Charged wool (body warmth)**
+```text
+Wool cloth → chant "रम रम" × 27 over it → charged wool → use for 24 hours → warms whole body
+```
+Key numbers (GURU TEACHING): chant **"रम रम"**, count **27**, usage **24 hours**.
 
 ### Underlying principles (GURU TEACHING)
 
 - **A — Opposite Swara:** for some conditions, close the current active Swara and activate the
   opposite (R1).
 - **B — Chandra = Cooling/Calming:** applied to High BP, High Fever.
-- **C — Surya = Heating/Activating (Agni):** applied to Low BP, cold, pain.
-- **D — RAM = Agni beejakshara:** Surya + RAM activates Agni Tattva; used in palm-rubbing pain relief.
+- **C — Surya = Heating/Activating (Agni):** applied to Low BP, cold, **constipation**, pain, charged
+  wool.
+- **D — "रम रम" = Agni beejakshara:** Surya + "रम रम" activates Agni Tattva; used in palm-rubbing pain
+  relief (R6) and charging wool (R8).
 
 ### Personal practice record (per ADR-0008/0015 storage rules)
 

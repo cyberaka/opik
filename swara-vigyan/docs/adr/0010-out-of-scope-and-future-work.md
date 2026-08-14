@@ -48,6 +48,17 @@ Remedies (ADR-0018) — marked `NEEDS CLARIFICATION` (ADR-0017) until confirmed:
 - **PD-11:** Exact durations for the water remedies (fever / cold) were not specified.
 - **PD-12:** Any additional conditions, contraindications, or refinements the Guru teaches later.
 
+Daily practice & new modes (v2 — ADR-0020/0012):
+
+- **PD-13:** The complete **Tithi → Chandra/Surya mapping** for all Tithis (only Krishna Paksha
+  Navami → Surya is taught).
+- **PD-14:** Morning rule — **which foot** to place down first when leaving the bed.
+- **PD-15:** Morning rule — **how** to place the foot.
+- **PD-16:** Morning **intention / मनोवांछित** technique.
+- **PD-17:** The exact method for **self-prediction after mastery**.
+- **PD-18:** Proxy mode — exact mapping of the **proxy's Swara/state → YES/NO** (ADR-0012 Mode F).
+- **PD-19:** Further applications/rules of the **"रम रम"** beejakshara beyond those taught.
+
 (Mirrors ADR-0014's pending list and ADR-0017's `NEEDS CLARIFICATION`; keep them in sync.)
 
 ### Roadmap (each adopted item gets its own ADR)
@@ -61,6 +72,12 @@ Remedies (ADR-0018) — marked `NEEDS CLARIFICATION` (ADR-0017) until confirmed:
 - **FW-6:** Mobile app sharing the pure derivation core (ADR-0009 FD-1).
 - **FW-7:** Ruleset-version migration tooling to reprocess history when pending rules are taught
   (ADR-0015 DA-4).
+- **FW-8:** **TODAY** module — Tithi/sunrise/wake-up practice (ADR-0020), incl. optional astronomical
+  sunrise/tithi lookup as a clearly-labelled `RESEARCH NOTE` convenience.
+- **FW-9:** **IMPORTANT EVENTS** module — public-speaking guidance (ADR-0021); extensible to other
+  taught event practices.
+- **FW-10:** **My Question / Proxy** prediction mode (ADR-0012 Mode F) once the proxy→YES/NO mapping
+  is taught, and a **PRACTICE JOURNAL** over the ADR-0015 schema.
 
 ### Disclaimer & framing (required)
 

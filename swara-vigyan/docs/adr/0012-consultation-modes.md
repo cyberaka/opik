@@ -59,6 +59,22 @@ observation points and which signal(s) apply.
 - **Behind + Chandra (LEFT) active → PENDING** (not yet taught; must not be inferred — ADR-0014,
   ADR-0010).
 
+### Mode F — My Question / Proxy (another person's Swara)
+
+- For the practitioner's **own** question, until they have mastery they should **not** try to read
+  the answer from their own Swara directly.
+- Instead, use a **proxy**: call/ask a family member, note their **current Swara / spontaneous
+  state**, and use *their* spontaneous energy as the indication.
+  ```text
+  QUESTION = mine
+  SWARA SOURCE = another person (spontaneous, not manipulated)
+  ```
+- **MO-F1:** The proxy's observation must be **spontaneous** (not coached/manipulated), consistent
+  with the observation philosophy (ADR-0013 SIG-C2, ADR-0021 EV-0).
+- **MO-F2 — PENDING:** the **exact mapping of the proxy's Swara/state to a YES/NO** is not yet taught
+  (ADR-0010 §Pending). The app records the proxy observation and shows `Pending` — it does not invent
+  the mapping.
+
 ### Cross-mode requirements
 
 - **MO-1:** Every mode reuses the same side→polarity conversion (ADR-0002 DR-3), evaluated at the
@@ -79,6 +95,7 @@ Shared/Chamber   : ENERGY@SIT → ENERGY@QUESTION           → four rules
 Sabha            : QUESTIONER SIDE + SWARA@QUESTION        → Bhara/Khali
 Remote/Unknown   : BREATH@QUESTION (Saguna/Nirguna)        → positive/negative
 Behind           : BEHIND + SURYA → positive ; +Chandra → pending
+My Question/Proxy: ANOTHER PERSON's spontaneous Swara/state → indication (YES/NO mapping pending)
 ```
 
 ## Consequences

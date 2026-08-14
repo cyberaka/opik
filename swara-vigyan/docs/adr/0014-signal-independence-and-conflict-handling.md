@@ -49,8 +49,12 @@ Practitioner not ready (Rule 0)   → no signals computed at all (ADR-0011)
 - How to combine Saguna/Nirguna with Bhara/Khali.
 - Exceptions / special cases.
 - Meethi Goli selection rules (color/object/timing relation to Swara), if any.
+- Proxy mode: mapping the proxy person's Swara/state → YES/NO (ADR-0012 Mode F).
+- Daily practice: full Tithi→Swara mapping and the pending morning micro-rules (ADR-0020).
+- Self-prediction method after mastery.
 
-(This list mirrors ADR-0010 §Pending; both must be updated together as the Guru teaches more.)
+(This list mirrors ADR-0010 §Pending — the full, numbered list (PD-1…PD-19) lives there; both must be
+updated together as the Guru teaches more.)
 
 ### Requirements
 

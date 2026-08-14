@@ -30,9 +30,9 @@ mistake a spiritual-practice aid for medical treatment or delay real care.
 - **SF-3 — Do not alter prescribed treatment.** The app MUST advise users not to stop or change
   prescribed medication (e.g. BP medication) based on the app.
 - **SF-4 — No diagnosis / no efficacy claims by the app.** The app itself makes no medical claims;
-  taught results (e.g. "subsides in the 6th minute") are shown strictly as `GURU TEACHING`
-  quotations (ADR-0017), attributed and visually separated from app text — never as the app's
-  promise.
+  taught results (e.g. "subsides in the 6th minute") and strong reliability statements (e.g.
+  *"Swara Vigyan fail नहीं होता"*, ADR-0017 PV-7) are shown strictly as `GURU TEACHING` quotations,
+  attributed and visually separated from app text — never as the app's own promise or guarantee.
 
 ### Placement & visibility
 
@@ -54,6 +54,10 @@ mistake a spiritual-practice aid for medical treatment or delay real care.
 - **SF-10 — Personal-practice tracking is not medical monitoring.** The optional practice record
   (ADR-0018 RM-4) is for personal observation only; intensity numbers are subjective and not a
   clinical measurement.
+- **SF-12 — New remedies (v2).** Persistent or severe **constipation** (or with pain/bleeding) should
+  be seen by a professional, not self-managed indefinitely. The **charged-wool** practice is
+  low-risk, but users should avoid overheating and watch for skin irritation; it is comfort practice,
+  not treatment.
 
 ### Boundaries
 

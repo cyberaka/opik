@@ -33,6 +33,18 @@ the architecture and technology.
 - **AR-6: Mobile-app direction.** The POC is a responsive web app, but the raw-observation schema
   and pure derivation core are designed to be **portable to a future mobile app** (the notes'
   stated goal). The data contract (ADR-0015), not the web UI, is the durable asset.
+- **AR-7: Module map.** The product is organized into modules over the shared domain/derivation core:
+  ```text
+  SWARA VIGYAN
+  ├── TODAY              (Tithi, sunrise, expected Swara, wake-up — ADR-0020)
+  ├── SWARA OBSERVATION  (Chandra/Surya, Saguna/Nirguna — ADR-0002/0013)
+  ├── PREDICTION         (Independent Room, Shared, Sabha, Remote, Behind, My-Question/Proxy — ADR-0012)
+  ├── REMEDIES           (headache/BP/fever/cold/constipation/pain/charged-wool — ADR-0018)
+  ├── IMPORTANT EVENTS   (Public Speaking — ADR-0021)
+  └── PRACTICE JOURNAL   (opt-in local records over the ADR-0015 schema)
+  ```
+  Modules are thin presenters; all rules live in the pure core (AR-2/AR-3) so they stay testable and
+  reprocessable (AR-5).
 - **AR-4: Offline-capable.** The app must fully function with no network after first load
   (no runtime external requests). A service worker/PWA manifest is optional for the POC
   but the app MUST NOT depend on any network call to compute a prediction.

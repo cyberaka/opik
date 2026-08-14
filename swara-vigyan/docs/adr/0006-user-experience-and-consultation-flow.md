@@ -76,14 +76,24 @@ inventing an answer. This ADR defines the flow and UI requirements.
 - **UX-18 — Meethi Goli (ADR-0016):** an optional, clearly-symbolic suggestion attached to a
   prediction, never presented as the cause of the outcome.
 
-### Remedies module (separate flow)
+### Other modules (separate flows)
 
-- **UX-23:** The app has a top-level choice between **Consultation** and **Remedies** (ADR-0018).
-  The Remedies flow is Swara-first (read active Swara → pick condition → follow taught steps + taught
-  duration), detailed in ADR-0018; its health-safety framing is ADR-0019.
-- **UX-24 — Provenance rendering (ADR-0017):** across both flows, content is visibly tagged by
+- **UX-23:** The app's top level offers the modules (ADR-0005 AR-7): **Today · Swara Observation ·
+  Prediction · Remedies · Important Events · Practice Journal**. Each is Swara-first where relevant.
+  - **Remedies** (ADR-0018): read active Swara → pick condition → follow taught steps + taught
+    duration; health-safety framing from ADR-0019.
+  - **Today** (ADR-0020): Tithi/sunrise/wake-up; expected Swara shown only where taught, else a
+    `NEEDS CLARIFICATION` note; manual record allowed.
+  - **Important Events → Public Speaking** (ADR-0021): three-phase guidance, presented as
+    preparation guidance, **not** a YES/NO prediction.
+  - **My Question / Proxy** (ADR-0012 Mode F): capture another person's spontaneous Swara; show
+    `Pending` for the YES/NO mapping.
+- **UX-24 — Provenance rendering (ADR-0017):** across all flows, content is visibly tagged by
   provenance — **Guru Teaching** vs a set-apart **Research/Safety Note** vs a **Needs Clarification**
-  flag. A safety note must never look like teaching, and vice versa.
+  flag. Exact terms (e.g. **"रम रम"**) are shown verbatim (PV-6).
+- **UX-25 — Action vs observation (ADR-0021 EV-0):** the UI clearly distinguishes *act in a chosen
+  Swara* (Events, Remedies) from *observe a spontaneous Swara* (Prediction). The prediction flow's
+  "never manufacture the breath" rule is never shown as guidance to *adopt* a Swara.
 
 ### Cross-cutting
 

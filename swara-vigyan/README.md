@@ -7,33 +7,36 @@
 गुरु की teaching के canonical rules ADRs में capture किए गए हैं, ताकि implementation से पहले
 scope, domain logic और design decisions पर सहमति बने।
 
-> **Knowledge baseline:** *Consolidated Master Notes — Version 1* (Guru's teaching).
+> **Knowledge baseline:** *Consolidated Master Notes — Version 2* (Guru's teaching).
 > जहाँ गुरु से exact rule नहीं मिला है, उसे **invent नहीं** किया गया — ऐसे बिंदु
-> "Pending" के रूप में चिह्नित हैं (देखें ADR-0014, ADR-0010 §future)।
+> "Pending" / "Needs Clarification" के रूप में चिह्नित हैं (देखें ADR-0010 §Pending, ADR-0014, ADR-0017)।
 
 ---
 
 ## यह क्या है?
 
-एक **Swara Vigyan practice assistant** जिसमें **दो capabilities** हैं:
+एक **Swara Vigyan practice assistant**। Envisioned module map:
+**TODAY · SWARA OBSERVATION · PREDICTION · REMEDIES · IMPORTANT EVENTS · PRACTICE JOURNAL**।
 
-**1. Consultation & Prediction** — practitioner अपने वर्तमान **active nostril** (भरा स्वर) और
-visitor की स्थिति/प्रश्न के समय की energy देखकर prediction करता है:
+**1. Consultation & Prediction** — active nostril (भरा स्वर) और visitor की energy से prediction:
+चार मूल नियम (Bhara/Khali transition), **Rule 0** readiness gate, modes (Independent Room,
+Shared/Chamber, Sabha, Remote, Behind, **My-Question/Proxy**), और signals (Saguna/Nirguna breath,
+addressing, position-swara, behind)। एक **raw-observation-first architecture** ताकि गुरु के भविष्य
+के rules आने पर पुराने observations दोबारा interpret हो सकें।
 
-- **चार मूल नियम** (Bhara/Khali energy transition) — YES / NO / mixed outcomes
-- **Rule 0** — practitioner की readiness के बिना कोई prediction नहीं
-- **Modes** — Independent Room, Shared/Chamber, Sabha/Group, Remote/Behind
-- **Signals** — Saguna/Nirguna breath, question addressing, position-swara, behind-position
-- एक **raw-observation-first architecture** ताकि गुरु के भविष्य के rules आने पर पुराने
-  observations को दोबारा interpret किया जा सके।
+**2. Remedies & Therapeutic Practices** — Swara-based remedies (headache/anxiety/migraine, high/low
+BP, fever, cold, **constipation**, body pain via Surya+**"रम रम"**+Agni+palm-rubbing, **charged
+wool**), जैसा गुरु ने सिखाया वैसा ही — teaching से अलग रखी health-safety notes के साथ।
 
-**2. Remedies & Therapeutic Practices** — Swara-based remedies (headache/anxiety/migraine, BP,
-fever, cold, body pain), जैसा गुरु ने सिखाया वैसा ही (strength/duration सहित), optional personal
-practice record के साथ — और teaching से अलग रखी गई health-safety notes के साथ।
+**3. Daily Practice / TODAY** — Tithi → expected Swara, sunrise checkpoint, wake-up guidance
+(जो taught है वही; बाकी Pending)।
 
-दोनों capabilities एक **content-provenance convention** का पालन करती हैं:
-**Guru Teaching** को कभी भी **Research/Safety Note** या **Needs Clarification** के साथ mix नहीं
-किया जाता (ADR-0017)।
+**4. Important Events** — किसी चुने हुए Swara में *action* करने की guidance (public speaking:
+चंद्र→stage, सूर्य+inhale→greeting, सूर्य→presentation)।
+
+सभी capabilities एक **content-provenance convention** का पालन करती हैं: **Guru Teaching** को कभी
+**Research/Safety Note** या **Needs Clarification** के साथ mix नहीं किया जाता, और exact terms (जैसे
+**"रम रम"**) verbatim रखे जाते हैं (ADR-0017)।
 
 ---
 
@@ -52,10 +55,16 @@ practice record के साथ — और teaching से अलग रखी 
 |-----|--------|
 | [0004](docs/adr/0004-prediction-rule-engine.md) | Four-Rule Energy Engine (First → Second) |
 | [0011](docs/adr/0011-rule-0-practitioner-readiness.md) | Rule 0 — Practitioner Readiness Gate |
-| [0012](docs/adr/0012-consultation-modes.md) | Consultation Modes (A/B/C/Remote/Behind) |
+| [0012](docs/adr/0012-consultation-modes.md) | Consultation Modes (Independent Room / Shared / Sabha / Remote / Behind / Proxy) |
 | [0013](docs/adr/0013-additional-prediction-signals.md) | Additional Prediction Signals (breath, addressing, position, behind) |
 | [0014](docs/adr/0014-signal-independence-and-conflict-handling.md) | Signal Independence, Conflicts & Pending Rules |
 | [0016](docs/adr/0016-meethi-goli-symbolic-action.md) | Meethi Goli — Symbolic Action (non-causal) |
+
+### Daily practice & events
+| ADR | शीर्षक |
+|-----|--------|
+| [0020](docs/adr/0020-tithi-sunrise-and-morning-practice.md) | Tithi, Sunrise & Morning Wake-Up Practice |
+| [0021](docs/adr/0021-public-speaking-and-important-events.md) | Important Events — Public Speaking / Mass Gathering |
 
 ### Remedies & content integrity
 | ADR | शीर्षक |
@@ -79,9 +88,9 @@ practice record के साथ — और teaching से अलग रखी 
 
 ## Status
 
-सभी ADRs वर्तमान में **Accepted (knowledge baseline v1)** हैं। किसी भी rule को implement या बदलने
-से पहले संबंधित ADR update किया जाए। जो rules अभी गुरु से सीखने बाकी हैं, वे ADR-0010 §Pending और
-ADR-0014 में सूचीबद्ध हैं और app में **invent नहीं** किए जाएँगे।
+सभी ADRs वर्तमान में **Accepted (knowledge baseline v2)** हैं। किसी भी rule को implement या बदलने
+से पहले संबंधित ADR update किया जाए। जो rules अभी गुरु से सीखने बाकी हैं, वे ADR-0010 §Pending
+(PD-1…PD-19) और ADR-0014 में सूचीबद्ध हैं और app में **invent नहीं** किए जाएँगे।
 
 ## Disclaimer
 
