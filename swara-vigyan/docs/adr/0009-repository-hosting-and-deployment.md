@@ -15,16 +15,15 @@ few choices should be recorded.
 
 ### Repository
 
-- **RP-1:** Source of truth is the existing **`opik`** repository, with this knowledge base living
-  under the top-level **`swara-vigyan/`** directory (`swara-vigyan/README.md` +
-  `swara-vigyan/docs/adr/`). A separate `swara_vigyan_poc` repo was considered but the owner chose
-  to keep everything in `opik`; the ADR content and structure are unchanged by that choice.
-- **RP-2:** The `swara-vigyan/` tree starts as documentation-only (this ADR set). Application code,
-  if built, lands later under the same directory (e.g. `swara-vigyan/app/`), with ADRs remaining in
-  `swara-vigyan/docs/adr/`.
-- **RP-3: Branching.** Work happens on short-lived feature branches (current:
-  `claude/swara-vigyan-room-rules-firsxd`) and is merged via pull request. Commit messages are
-  descriptive.
+- **RP-1:** Source of truth is the dedicated **private** GitHub repository
+  **[`cyberaka/SwaraFlow`](https://github.com/cyberaka/SwaraFlow)**. The knowledge base lives at the
+  repo root (`README.md` + `docs/adr/`). Earlier iterations briefly lived in the owner's `opik` fork;
+  that was a setup artifact and the work was relocated here — an unrelated public project's fork is
+  not an appropriate home for these personal notes.
+- **RP-2:** The repo starts as documentation-only (this ADR set). Application code, if built, lands
+  later in the same repo (e.g. an `app/` directory), with ADRs remaining in `docs/adr/`.
+- **RP-3: Branching.** Work happens on `main` (or short-lived feature branches merged via PR).
+  Commit messages are descriptive.
 
 ### Hosting & deployment
 
